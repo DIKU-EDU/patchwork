@@ -1,8 +1,8 @@
 # Patchwork — Patching Meta-Structure on top of Git
 
-Patchwork allows to maintain features as separate patches. This is useful for
-code handouts that build on each other, but cannot otherwise be maintained in
-branches. This is not recommended for projects where branches will do.
+Patchwork allows to maintain features as patches. This is useful for code
+handouts that build on each other, but cannot otherwise be maintained as
+branches. _This is not recommended for projects where branches will do._
 
 ![Some Patchwork](logo.png
   "Image license: CC0; Source: https://pixabay.com/en/colorful-colourful-art-modern-1788518/")
