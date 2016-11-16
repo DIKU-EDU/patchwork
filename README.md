@@ -11,13 +11,15 @@ branches. _This is not recommended for projects where branches will do._
 
 Early versions of patchwork appeared in [OSM
 2015/2016](http://web.archive.org/web/20161116162814/http://kurser.ku.dk/course/ndaa04029u/2015-2016)
-at [DIKU](http://diku.dk/). The purpose there was to manage various versions of
-[KUDOS](https://github.com/DIKU-EDU/kudos) handed out throughout the course.
-Each handout contained additions/variations on the public code base which were
-relevant to a given assignment. These changes could not be maintained in
-branches on [KUDOS](https://github.com/DIKU-EDU/kudos), as they offered
-solutions to some of the earlier exercises which might have been reused in the
-following years.
+at [DIKU](http://diku.dk/).
+
+The purpose there was to manage the various versions of
+[KUDOS](https://github.com/DIKU-EDU/kudos), handed out throughout the course.
+Each handout contained additions/variations on the [public code
+base](https://github.com/DIKU-EDU/kudos), which were relevant to some given
+assignment. These changes could not be maintained as branches on
+[KUDOS](https://github.com/DIKU-EDU/kudos), as they revealed solutions to
+assignments which might have been reused in the following years.
 
 They could've been maintained in a private GitHub fork, but GitHub has poor
-support for this.
+support for this. So "patchwork" would be needed elsewhere.
