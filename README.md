@@ -1,4 +1,4 @@
-# Patchwork
+# Patchwork — Patching Meta-Structure on top of Git
 
 Patchwork allows to maintain features as separate patches. This is useful for
 code handouts that build on each other, but cannot otherwise be maintained in
