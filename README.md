@@ -39,8 +39,8 @@ definition of 4 variables: `HTTPS_REMOTE`, `BASETAG`, `BASEPATCHES`, and
 A "patchwork" is a clone of the `HTTPS_REMOTE`, at tag `BASETAG`, with the
 patches listed in `BASEPATCHES` applied on top, in addition to the working
 patch `PATCHNAME` (if any). That is, for each patch, there is a directory
-containing a patchfile. These directories can be composed in other patches via
-the `BASEPATCHES` array variable.
+containing a patchfile. These directories can be composed to form a patchwork
+via the `BASEPATCHES` array variable.
 
 To get patchwork to work, you will also need to add the path to
 [`tmpdir`](https://github.com/oleks/tmpdir) to your PATH environment variable.
