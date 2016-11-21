@@ -26,3 +26,28 @@ solutions to other and future assignments.
 They could've been maintained in a private GitHub fork, but GitHub has poor
 support for this — "patchwork" would be needed elsewhere.
 
+## Guide
+
+To make patchwork, you will need a patchfile. A patchfile is a shell script
+which will be sourced, but is primarily intended for the definition of 4
+variables `HTTPS_REMOTE`, `BASETAG`, `BASEPATCHES`, and `PATCHNAME`.
+
+A "patchwork" is a clone of the `HTTPS_REMOTE` at tag `BASETAG`, with the
+patches listed in `BASEPATCHES` applied on top, in addition to the working
+patch `PATCHNAME` (if any). That is, for each patch, there is a directory
+containing a patchfile. These directories can be composed in other patches via
+the `BASEPATCHES` array variable.
+
+To get patchwork to work, you will also need to add the path to
+[`tmpdir`](https://github.com/oleks/tmpdir) to your PATH environment variable.
+(Specifically [`gen-patch.sh`](src/gen-patch.sh) will need it.)
+
+### Editor Command Lines
+
+For readability, we recommend starting the file with editor control lines
+indicating that the patchfile is a conf-style file:
+
+````
+# -*- mode: conf-mode
+# vim: set ft=config
+````
