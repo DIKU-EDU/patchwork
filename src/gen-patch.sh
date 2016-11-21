@@ -7,7 +7,7 @@ set -euo pipefail
 script_dir="$(dirname "$(readlink -f "${0}")")"
 
 if [ $# -eq 0 ]; then
-  exec tmpdir $0 %%TMPDIR
+  exec tmpdir "$0" %%TMPDIR
 fi
 
 function show_usage() {
