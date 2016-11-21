@@ -7,6 +7,8 @@ branches. _This is not recommended for projects where branches will do._
 ![Some Patchwork](logo.png
   "Image license: CC0; Source: https://pixabay.com/en/colorful-colourful-art-modern-1788518/")
 
+[![License](https://img.shields.io/badge/license-EUPL%20v1.1-blue.svg)](https://github.com/DIKU-EDU/patchwork/blob/master/LICENSE.md)
+
 ## History
 
 Early versions of patchwork appeared in [OSM
