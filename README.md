@@ -29,8 +29,12 @@ support for this — "patchwork" would be needed elsewhere.
 ## Guide
 
 To make patchwork, you will need a patchfile. A patchfile is a shell script
-which will be sourced, but is primarily intended for the definition of 4
-variables `HTTPS_REMOTE`, `BASETAG`, `BASEPATCHES`, and `PATCHNAME`.
+which will be
+[sourced](http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html#dot)
+by [`gen-patchwork.sh`](src/gen-patchwork.sh) and
+[`gen-patch.sh`](src/gen-patch.sh), but is primarily intended for the
+definition of 4 variables: `HTTPS_REMOTE`, `BASETAG`, `BASEPATCHES`, and
+`PATCHNAME`.
 
 A "patchwork" is a clone of the `HTTPS_REMOTE` at tag `BASETAG`, with the
 patches listed in `BASEPATCHES` applied on top, in addition to the working
