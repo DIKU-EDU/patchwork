@@ -20,8 +20,8 @@ The purpose there was to manage the various versions of
 Each handout contained additions/variations on the [public code
 base](https://github.com/DIKU-EDU/kudos), which were relevant to some given
 assignment. These changes could not be maintained as branches on
-[KUDOS](https://github.com/DIKU-EDU/kudos), as they revealed solutions to
-assignments which might have been reused in the following years.
+[KUDOS](https://github.com/DIKU-EDU/kudos), as they might have revealed partial
+solutions to other and future assignments.
 
 They could've been maintained in a private GitHub fork, but GitHub has poor
 support for this. So "patchwork" would be needed elsewhere.
