@@ -44,7 +44,7 @@ via the `BASEPATCHES` array variable.
 
 To get patchwork to work, you will also need to add the path to
 [`tmpdir`](https://github.com/oleks/tmpdir) to your PATH environment variable.
-(Specifically [`gen-patch.sh`](src/gen-patch.sh) will need it.)
+(In particular, [`gen-patch.sh`](src/gen-patch.sh) will need it.)
 
 ### Editor Command Lines
 
