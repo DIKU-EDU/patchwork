@@ -84,11 +84,11 @@ if [ -n "${BASEPATCHES}" ] ; then
   do
     patch="${BASEPATCHES[$i]}"
     echo "Applying ${patch}.."
-    patch -p0 < "${cwd}/${patch}"
+    patch -p1 < "${cwd}/${patch}"
   done
 fi
 
 if [ -z "${baseline}" ] && [ -n "${PATCHNAME}" ] ; then
   echo "Applying ${PATCHNAME}.."
-  patch -p0 < "${cwd}/${PATCHNAME}"
+  patch -p1 < "${cwd}/${PATCHNAME}"
 fi
