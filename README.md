@@ -24,4 +24,5 @@ assignment. These changes could not be maintained as branches on
 solutions to other and future assignments.
 
 They could've been maintained in a private GitHub fork, but GitHub has poor
-support for this. So "patchwork" would be needed elsewhere.
+support for this — "patchwork" would be needed elsewhere.
+
