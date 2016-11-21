@@ -36,7 +36,7 @@ by [`gen-patchwork.sh`](src/gen-patchwork.sh) and
 definition of 4 variables: `HTTPS_REMOTE`, `BASETAG`, `BASEPATCHES`, and
 `PATCHNAME`.
 
-A "patchwork" is a clone of the `HTTPS_REMOTE` at tag `BASETAG`, with the
+A "patchwork" is a clone of the `HTTPS_REMOTE`, at tag `BASETAG`, with the
 patches listed in `BASEPATCHES` applied on top, in addition to the working
 patch `PATCHNAME` (if any). That is, for each patch, there is a directory
 containing a patchfile. These directories can be composed in other patches via
