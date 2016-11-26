@@ -43,11 +43,15 @@ if [ "$#" -gt 0 ] ; then
   done
 fi
 
+set +u
 if [ -n "${BASEPATCHES}" ] ; then
+  set -u
   for ((i=0; i<${#BASEPATCHES[@]}; i++));
   do
     BASEPATCHES[$i]=$(echo "${BASEPATCHES[$i]}" | perl -pe "s/$/.patch/")
   done
+else
+  set -u
 fi
 
 if [ -n "${PATCHNAME}" ] ; then
@@ -79,7 +83,9 @@ git clone "${HTTPS_REMOTE}" "${patchworkdir}"
 rm -rf "${patchworkdir}/.git" # Just so no one tries to push this to master.
 
 cd "${basedir}"
+set +u
 if [ -n "${BASEPATCHES}" ] ; then
+  set -u
   for ((i=0; i<${#BASEPATCHES[@]}; i++));
   do
     patch="${BASEPATCHES[$i]}"
@@ -87,6 +93,7 @@ if [ -n "${BASEPATCHES}" ] ; then
     patch -p1 < "${cwd}/${patch}"
   done
 fi
+set -u
 
 if [ -z "${baseline}" ] && [ -n "${PATCHNAME}" ] ; then
   echo "Applying ${PATCHNAME}.."
